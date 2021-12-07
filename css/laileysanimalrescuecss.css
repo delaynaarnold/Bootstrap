@@ -1,0 +1,38 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+h1,h2,h3 {
+    font-family:  'Staatliches', cursive, sans-serif;
+}
+
+h2 {
+    color: #b91372;
+}
+
+header h2 {
+    color: #cec8ff;
+}
+
+footer {
+    background-image: linear-gradient(pink, white);
+    padding: 20px, 0;
+}
+
+.jumbotron {
+    margin: 0;
+    padding: 30px;
+    background-image: linear-gradient(to right,  #b91372, #6b0f1a);
+    color: white;
+}
+
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.navbar {
+    background-color: lightpink;
+
+}

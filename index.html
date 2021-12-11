@@ -27,14 +27,20 @@
             <div class="container">
                 <div class="row"> 
                     <div class="col-4 col-sm-3 col-md-2 align-self-center">
-                    <a href="#"><img src="img/logo.png" class="img-fluid"/> </a> 
+                    <a href="index.html"><img src="img/logo.png" class="img-fluid"/> </a> 
                     </div>
                     <div class="col">
                  <h1> NuCamp</h1>
                  <h2> a better way to camp </h2>
                     </div>
+                    <div class=" col col-md-4 col-xl-2">
+                        <a class="btn btn-info btn-lg" href="#reserveForm" role="button"> Reserve Campsite</a>
+                    </div>
+                </div>
                 </div>
             </div>
+            <!--Jumbotron Button-->
+           
     </header>
 
         <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
@@ -73,14 +79,20 @@
         </div>
     
             <div class="row row-content align-items-center">
-                <div class="col-sm-4 col-md-3">
-                    <h2 Class=" text-sm-left">Featured Campsites</h2>
-                </div>
-                <div class="col">
+        <div class="col-sm-4 col-md-3">
+            <h2>Featured Campsites</h2>
+        </div>
+        <div class="col">
+            <div class="media">
+                <!--you can also write align-items-center-->
+                <div class="media-body align-self-center">
                     <h3>React Lake Campground</h3>
-                    <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                   </div>
+                    <p class= "d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                </div>
+                <img class="d-flex ml-3 img-thumbnail" src="img/react-lake-thumb.jpg" class="rounded float-right" alt="Featured Campsites" />
             </div>
+        </div>    
+    </div>
             <div class="row row-content align-items-center">
                 <div class="col-sm-4 order-sm-last col-md-3"> 
                     <h2 class="text-sm-right"> Our Community Partners </h2>
@@ -96,7 +108,45 @@
                 </div>
             </div>
         </div>
-    </div>
+        <!--TASK 2-->
+            <div class="row row-content form-group">
+                <div class="col-sm-6 mx-auto">
+                    <div class="card">
+                        <h3 class="card-header bg-info text-white"> Reserve a Campsite </h3> 
+
+                        <div class="card-body">
+                            <form id="reserveForm">
+                                <div class=" form-group row">
+                                    <label  for="numCampers" class="col-sm-6 col-form-label"> Number of Campers</label>
+                                    <div class="col">
+                                        <select class="form-control" name="numCampers" id="numCampers">
+                                            <option selected>Select...</option>
+                                            <option value="one"> 1 </option>
+                                            <option value="two">2 </option>
+                                            <option value="three"> 3 </option>
+                                            <option value="four"> 4 </option>
+                                            <option value="five"> 5 </option>
+                                            <option value="Six"> 6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class=" row form-group">
+                                       <label class=" col-sm-6 col-form-label" for="date"> Date: </label>
+                                             <div class="col">
+                                       <input class="form-control" type="date" id="date" name="date" placeholder="mm/dd/yyyy">
+                                </div>
+                                </div>
+                                 <div class="form-group row">
+                                    <div class="col-sm-6">
+                                        <button type="submit" class="btn btn-primary"> Search </button>
+                                            </div>
+                                         </div>
+                                  </form>
+                             </div>
+                       </div>
+                 </div>
+            </div>
+        
 
 
     <footer>

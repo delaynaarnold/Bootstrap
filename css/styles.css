@@ -46,3 +46,11 @@ a, a:hover {
     text-decoration: none;
     cursor: pointer;
   }
+  .carousel-caption {
+    background-color: rgba(119, 68, 115, 0.5);
+}
+
+.carousel {
+    border: solid purple;
+}
+
